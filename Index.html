@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login Page with Video Background</title>
+    <title>LUXMUNDI CUP 2024</title>
+    <script>
+        function Login() {
+            var username = document.getElementById("user").value;
+            var password = document.getElementById("pass").value;
+            if (username === "Khert" && password === "Cuizon") {
+                window.location.href = "1.html";
+            } else {
+                alert("Incorrect username or password");
+            }
+        }
+
+        function showpass(checkbox) {
+            var password = document.getElementById("pass");
+            if (checkbox.checked) {
+                password.setAttribute("type", "text");
+            } else {
+                password.setAttribute("type", "password");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 class="blinking-text">LUXMUNDI CUP 2024</h1>
+    
+    <div class="logo-container">
+
+        <img src="tcgc.jpg" alt="Logo 1">
+    </div> 
+    <div class="loga-container">
+        <img src="ics.png" alt="Logo 1">
+    </div>
+
+    <div class="loge-container">
+        <img src="jpeg.jpg" alt="Logo 1">
+    </div>
+
+    <video autoplay muted loop class="background-video">
+        <source src="pinterestdownloader.com-1734043287.757125.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content"> 
+        <div class="log">
+            <h1><a class="login">LOGIN</a></h1>
+            <div class="inputs">
+                <input class="inputuser" id="user" type="text" placeholder="Username">
+                <input class="inputuser" id="pass" type="password" placeholder="Password">
+            </div><nbsb></nbsb>
+            <div class="Khert">
+                <div class="show-password">
+                    <input type="checkbox" onclick="showpass(this)">
+                    <label for="show-password">Show password</label>
+                </div>
+                <button class="btn" onclick="Login()">LOGIN</button>
+                <div class="forgot">
+                    <!-- You can add a "Forgot Password?" link here if needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
